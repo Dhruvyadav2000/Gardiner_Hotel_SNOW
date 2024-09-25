@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0955c622933c9210848370a08bba1044" label="Reservation" max_length="40" name="x_866753_hotel_reservation" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="name" type="string"/>
+        <element label="Departure" max_length="40" name="departure" type="glide_date"/>
+        <element label="Arrival" max_length="40" name="arrival" type="glide_date"/>
+        <element label="Room" max_length="32" name="room" reference="x_866753_hotel_room" type="reference"/>
+        <index name="index">
+            <element name="room"/>
+        </index>
+    </element>
+</database>

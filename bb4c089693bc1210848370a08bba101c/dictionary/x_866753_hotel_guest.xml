@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5361869293f45210848370a08bba10b0" extends="sys_user" label="Guest" max_length="40" name="x_866753_hotel_guest" type="collection">
+        <element label="Reservations" max_length="32" name="reservations" reference="x_866753_hotel_reservation" type="reference"/>
+        <element label="Membership Number" max_length="40" name="membership_number" type="translated_text"/>
+        <index name="index">
+            <element name="reservations"/>
+        </index>
+    </element>
+</database>
